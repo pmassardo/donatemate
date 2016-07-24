@@ -1,0 +1,14 @@
+<h1 class = "title">All Projects</h1>
+
+<ul>
+
+  <% @projects.each do |project| %>
+    <li class= "project"> <%= link_to project.title, project_path(project.id), class: "proj-title" %><br>
+    <%= "Goal: $#{project.goal.to_s}"%> <br>
+      <% if current_user%>
+        <span class="donate-mate"><%= link_to "Donate Mate!", new_project_pledge_path(project.id) %></span>
+      <% end %> 
+    </li>
+  <% end %>
+
+</ul>

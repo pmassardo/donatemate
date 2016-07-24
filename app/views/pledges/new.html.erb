@@ -1,0 +1,26 @@
+<h1>New Pledge</h1>
+
+<%= form_for [@project, @pledge] do |f| %>
+<%#= form_for @pledge do |f| %>
+
+<% if @pledge.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@pledge.errors.count, "error") %> prohibited this pledge from being saved:</h2>
+
+    <ul>
+    <% @pledge.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

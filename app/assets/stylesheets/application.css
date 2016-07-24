@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url(https://fonts.googleapis.com/css?family=Laila:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+ body{
+   background-color: #FDF3E7;
+ }
+
+ p{
+   font-size: 1.2em;
+ }
+ a{
+
+  color: #3b3738;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ h1 {
+   font-size: 2.2em;
+   font-family: 'Montserrat', sans-serif;
+ }
+ .wrapper {
+  margin-left: 5%;
+ }
+
+ .field input,
+ textarea,
+ .actions {
+  color: black;
+ }
+
+ .login-in-nav{
+  float: right;
+ }
+ .navbar-header{
+    background-color: #C63D0F;
+ }
+ .navbar-default{
+   background-color: #C63D0F;
+ }
+ .navbar-default .navbar-brand{
+   color: #3B3738;
+   font-family: 'Laila', serif;
+   font-weight: 700;
+   font-size: 1.7em;
+ }
+
+ button.navbar-toggle{
+   color: #3B3738;
+
+ }
+.navbar-default .navbar-nav li a{
+  color: #3b3738;
+  font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav li a:hover{
+  color: #FFFFFF;
+}

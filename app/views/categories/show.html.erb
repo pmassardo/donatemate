@@ -1,0 +1,6 @@
+<div class="form">
+<h1><%= @category.name %></h1>
+<% @category.projects.each do |project| %>
+  <p><%= link_to project.title + ' - $' + project.goal.to_s, project_path(project) %></p>
+<% end %>
+</div>
